@@ -42,6 +42,11 @@ class CategoryController extends Controller
         return redirect()->route('categories.index')->with('message', 'Category Created Successfully');
     }
 
+    public function show($id)
+    {
+        //
+    }
+
     public function edit($id)
     {
         $category = $this->categoryRepository->findCategory($id);
@@ -60,6 +65,7 @@ class CategoryController extends Controller
 
         return redirect()->route('categories.index')->with('message', 'Category Updated Successfully');
     }
+
 
     public function destroy($id)
     {
