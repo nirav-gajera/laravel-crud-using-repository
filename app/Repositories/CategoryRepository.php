@@ -28,7 +28,7 @@ class CategoryRepository implements CategoryRepositoryInterface
         $category = Category::where('id', $id)->first();
         $category->name = $data['name'];
         $category->slug = $data['slug'];
-        $category->save();
+        $category->save(); 
     }
 
     public function destroyCategory($id)

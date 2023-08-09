@@ -2,7 +2,7 @@
 
 namespace App\Repositories\Interfaces;
 
-Interface CategoryRepositoryInterface{
+Interface CategoryRepositoryInterface {
     
     public function allCategories();
     public function storeCategory($data);
