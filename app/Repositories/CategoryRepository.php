@@ -27,7 +27,7 @@ class CategoryRepository implements CategoryRepositoryInterface
     {
         $category = Category::where('id', $id)->first();
         $category->name = $data['name'];
-        $category->slug = $data['slug'];
+        $category->description = $data['description'];
         $category->save(); 
     }
 

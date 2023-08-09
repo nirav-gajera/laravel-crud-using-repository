@@ -17,14 +17,14 @@
                 <form method="POST" action="{{ route('categories.store') }}"> 
                     {{ csrf_field() }}
                     <div class="mb-6">
-                        <label class="custom-label"> Category Name
+                        <label class="custom-label"> Category Name:
                             <input type="text" name="name" class="custom-input @error('name') border-red-500 @enderror"> 
                         </label>
                        
                     </div>
                     <div class="mb-6">
-                        <label class="custom-label"> Slug
-                            <input type="text" name="slug" class="custom-input @error('slug') border-red-500 @enderror">
+                        <label class="custom-label"> Description:
+                            <textarea name="description" class="custom-input @error('description') border-red-500 @enderror"></textarea>
                         </label>
                         
                     </div>

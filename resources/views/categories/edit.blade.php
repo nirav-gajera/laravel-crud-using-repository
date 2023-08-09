@@ -25,8 +25,8 @@
                     
                     </div>
                     <div class="mb-6">
-                        <label class="custom-label"> Slug
-                            <input type="text" name="slug" class="custom-input @error('slug') border-red-500 @enderror" value="{{old('slug',$category->slug)}}" />
+                        <label class="custom-label"> Description
+                            <textarea name="description" class="custom-input @error('description') border-red-500 @enderror">{{ old('description', $category->description) }}</textarea>
                         </label>
                         
                     </div>

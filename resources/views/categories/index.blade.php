@@ -37,7 +37,7 @@
                                     {{$category->name}}
                                 </td>
                                 <td class="custom-table-cell">
-                                    {{$category->slug}}
+                                    {{$category->description}}
                                 </td>
                                 <td class="custom-table-cell">
                                     <div class="button-group">

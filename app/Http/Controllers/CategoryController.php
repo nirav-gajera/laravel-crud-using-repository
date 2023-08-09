@@ -34,7 +34,7 @@ class CategoryController extends Controller
     {
         $data = $request->validate([
             'name' => 'required|string|max:255',
-            'slug' => 'required|string|max:255',
+            'description' => 'required|string|max:255',
         ]);
 
         $this->categoryRepository->storeCategory($data);
@@ -58,7 +58,7 @@ class CategoryController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'slug' => 'required|string|max:255',
+            'description' => 'required|string|max:255',
         ]);
 
         $this->categoryRepository->updateCategory($request->all(), $id);
