@@ -15,8 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 // Route::resource('categories', CategoryController::class);
+
 
 //single routes
 Route::get('categories', 'CategoryController@index')->name('categories.index');
