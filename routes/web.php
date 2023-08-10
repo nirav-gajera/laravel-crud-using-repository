@@ -18,8 +18,7 @@ Route::get('/', function () {
 
 // Route::resource('categories', CategoryController::class);
 
-
-
+//single routes
 Route::get('categories', 'CategoryController@index')->name('categories.index');
 Route::post('categories', 'CategoryController@store')->name('categories.store');
 Route::get('categories/create', 'CategoryController@create')->name('categories.create');
