@@ -19,13 +19,13 @@
                     {{ csrf_field() }}
                     {{ method_field('PUT') }}
                     <div class="mb-6">
-                        <label class="custom-label">Category Name
+                        <label class="custom-label">Category Name:
                             <input type="text" name="name" class="custom-input @error('name') border-red-500 @enderror" value="{{old('name',$category->name)}}" />
                         </label>
                     
                     </div>
                     <div class="mb-6">
-                        <label class="custom-label"> Description
+                        <label class="custom-label"> Description:
                             <textarea name="description" class="custom-input @error('description') border-red-500 @enderror">{{ old('description', $category->description) }}</textarea>
                         </label>
                         
