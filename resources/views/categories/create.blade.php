@@ -17,19 +17,19 @@
                 <form method="POST" action="{{ route('categories.store') }}"> 
                     {{ csrf_field() }}
                     <div class="mb-6">
-                        <label class="custom-label"> Category Name:
+                        <label class="custom-label">Category Name:
                             <input type="text" name="name" class="custom-input @error('name') border-red-500 @enderror"> 
                         </label>
                        
                     </div>
                     <div class="mb-6">
-                        <label class="custom-label"> Description:
+                        <label class="custom-label">Description:
                             <textarea name="description" class="custom-input @error('description') border-red-500 @enderror"></textarea>
                         </label>
                         
                     </div>
                     <button type="submit" class="custom-button">Submit</button>
-                    <a href="{{ route('categories.index') }}" class="btn btn-primary"> back</a>
+                    <a href="{{ route('categories.index') }}" class="btn btn-primary">back</a>
 
                 </form>
             </div>
