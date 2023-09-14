@@ -67,7 +67,7 @@
         <div class="flex-center position-ref full-height">
 
                 <div class="top-right links">
-                    <a href="{{ route('categories.index') }}"> Category</a>                   
+                    <a href="{{ route('categories.index') }}"> Category </a>                   
                 </div>
 
             <div class="content">
